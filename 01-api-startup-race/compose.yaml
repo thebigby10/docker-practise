@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgres://app:secret@localhost:5432/app
+    depends_on:
+      - db
+  db:
+    image: postgres:16

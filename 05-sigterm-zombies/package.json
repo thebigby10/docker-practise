@@ -1,0 +1,11 @@
+{
+  "name": "sigterm-zombies",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:worker": "node worker.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

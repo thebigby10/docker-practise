@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+  license:
+    image: node:20-alpine
+    command: ["node", "-e", "require('http').createServer((q,s)=>s.end('ok')).listen(9000)"]
+    network_mode: host

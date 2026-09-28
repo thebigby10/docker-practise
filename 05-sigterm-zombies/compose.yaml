@@ -1,0 +1,5 @@
+services:
+  worker:
+    build: .
+    stop_grace_period: 30s
+    init: true
